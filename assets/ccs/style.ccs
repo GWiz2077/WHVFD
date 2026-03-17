@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #1c1c1c;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: #8b0000;
+  color: white;
+  padding: 1rem 0;
+}
+
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.site-header h1,
+.site-header p {
+  margin: 0;
+}
+
+.tagline {
+  opacity: 0.9;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: linear-gradient(rgba(139, 0, 0, 0.92), rgba(90, 0, 0, 0.92));
+  color: white;
+  padding: 3rem 0;
+}
+
+.hero-grid,
+.two-up,
+.three-up {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero-grid,
+.two-up {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.three-up {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.section {
+  padding: 2.5rem 0;
+}
+
+.section-tight {
+  margin-top: 1rem;
+}
+
+.alt-bg {
+  background: #ececec;
+}
+
+.cards {
+  margin-top: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.button-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  background: white;
+  color: #8b0000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.hero-image {
+  margin-bottom: 1rem;
+}
+
+.site-footer {
+  background: #1d1d1d;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+@media (max-width: 700px) {
+  .nav-wrap {
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
